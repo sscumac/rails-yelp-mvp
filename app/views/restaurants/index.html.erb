@@ -1,0 +1,10 @@
+<h1>List of restaurants</h1>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    <%# <input type="checkbox" unchecked> %>
+  <% end %> 
+</ul>
+<%# 
+<%= link_to "Add new task", tasks_new_path %> 
